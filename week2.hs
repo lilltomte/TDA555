@@ -94,7 +94,8 @@ occursIn x xs = or [y==x | y <- xs]
 allOccursIn xs ys = and [occursIn x ys | x <- xs]
 
 -- sameElements xs ys, which returns True if xs and ys have exactly the same elements
-sameElements xs ys =  [ x | x <- xs, y <- ys, x == y]
+-- doesn't work just yet
+--sameElements xs ys =  [ x | x <- xs, y <- ys, x == y]
 
 -- numOccurrences x xs, which returns the number of times x occurs in xs
 numOccurences x xs = length [ y | y <- xs, y==x] 
